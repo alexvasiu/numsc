@@ -5,9 +5,10 @@ lazy val root = project
   .settings(
       name := "numsc",
       organization:= "com.avasiu",
-      githubOwner:= "alexvasiu",
-      githubRepository:= "numsc",
-      version := "0.0.2",
+      githubOwner := "alexvasiu",
+      githubRepository := "numsc",
+      publishArtifact in packageDoc := false,
+      version := "0.0.5",
       licenses += "MIT" -> file("./LICENSE").toURI.toURL,
       description := "Numpy for Scala",
       crossScalaVersions := supportedScalaVersions,
